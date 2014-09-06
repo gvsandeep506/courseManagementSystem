@@ -1,6 +1,1 @@
-git merge HEAD
-CONFLICT resolved in favour of original
-Changed content in my clone
-Software Architecture Project for implementing a course management system(moodle).Added ssh key authentication.
-Changed contents of readme
-fetch head changed made
+This is the software architecture project on Course Management System which includes instructors, TAs and students as components
