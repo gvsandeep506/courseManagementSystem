@@ -1,0 +1,7 @@
+create table instructors(employee_id varchar(15) NOT NULL PRIMARY KEY,name varchar(255) NOT NULL,dept varchar(255) NOT NULL,password varchar(255) NOT NULL);
+
+create table students(rollno varchar(15) NOT NULL PRIMARY KEY,name varchar(255) NOT NULL,dept varchar(255) NOT NULL,password varchar(255) NOT NULL,course_ta varchar(255));
+
+create table courses(course_id varchar(15) NOT NULL,course_name varchar(255) NOT NULL,instructor varchar(255) NOT NULL, constraint course_instructor PRIMARY KEY (course_id,course_name,instructor));
+
+create table courseregistration(rollno varchar(15) NOT NULL,name varchar(255) NOT NULL,course_id varchar(255) NOT NULL,constraint student_registration PRIMARY KEY(rollno,name,course_id));
